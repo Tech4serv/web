@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer & CCTV Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Computer & CCTV Shop Logo" class="logo-img">
+      </div>
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <!-- Navigation Menu -->
+      <nav id="nav-menu">
+        <div class="close-icon" onclick="toggleMenu()">
+          <i class="fas fa-times"></i>
+        </div>
+        <ul>
+          <li><a href="#home" onclick="closeMenu()">Home</a></li>
+          <li><a href="#cctv-packages" onclick="closeMenu()">CCTV Packages</a></li>
+          <li><a href="#services" onclick="closeMenu()">Services</a></li>
+          <li><a href="#why-choose-us" onclick="closeMenu()">Why Choose Us</a></li>
+          <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+          <li><a href="#reviews" onclick="closeMenu()">Reviews</a></li>
+          <li><a href="#contact-us" onclick="closeMenu()">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Slider Section -->
+  <section id="home" class="section">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="https://images.pexels.com/photos/179993/pexels-photo-179993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="CCTV Installation">
+          <div class="slide-content">
+            <h3>Professional CCTV Installations</h3>
+            <p>Secure your home and business with our top-notch CCTV services.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Computer Sales">
+          <div class="slide-content">
+            <h3>High-Quality Computers & Accessories</h3>
+            <p>Explore our wide range of computers and accessories for all your needs.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img src="https://images.pexels.com/photos/6257849/pexels-photo-6257849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Support Services">
+          <div class="slide-content">
+            <h3>24/7 Customer Support</h3>
+            <p>Our team is always ready to assist you with any questions or issues.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- CCTV Packages Section -->
+  <section id="cctv-packages" class="section">
+    <div class="container">
+      <h2>Our CCTV Camera Packages</h2>
+      <div class="cctv-package-list">
+        <!-- Package 1 -->
+        <div class="cctv-package">
+          <img src="https://images.pexels.com/photos/13156207/pexels-photo-13156207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="1 CCTV Camera">
+          <h3>4 CCTV Cameras</h3>
+          <p>Basic setup for home or small business.</p>
+          <p><strong>₹12,000-₹20,000</strong></p>
+          <button class="preview-btn" onclick="openPopup('Package 1', '₹12000-₹20000', 'Basic setup for home or small business.')">Preview</button>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="cctv-package">
+          <img src="https://images.pexels.com/photos/14534706/pexels-photo-14534706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="2 CCTV Cameras">
+          <h3>8 CCTV Cameras</h3>
+          <p>Ideal for medium-sized homes or offices.</p>
+          <p><strong>₹20,000-₹30,000</strong></p>
+          <button class="preview-btn" onclick="openPopup('Package 2', '₹20,000-₹30,000', 'Ideal for medium-sized homes or offices.')">Preview</button>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="cctv-package">
+          <img src="https://images.pexels.com/photos/10564672/pexels-photo-10564672.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="3 CCTV Cameras">
+          <h3>Custom CCTV Cameras</h3>
+          <p>Enhanced security with extra coverage for every kind of smaller and larger properties.</p>
+          <p><strong>It's Depends</strong></p>
+          <button class="preview-btn" onclick="openPopup('Package 3', 'Its Depends', 'In this package you can buy 1 to unlimited CCTV Cameras.')">Preview</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-list">
+        <!-- Service 1 -->
+        <div class="service">
+          <img src="https://images.pexels.com/photos/12689714/pexels-photo-12689714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="CCTV Installation">
+          <h3>CCTV Installation</h3>
+          <p>Professional installation of CCTV systems for homes and businesses.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service">
+          <img src="https://images.pexels.com/photos/4705628/pexels-photo-4705628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Computer Repair">
+          <h3>Computer Repair</h3>
+          <p>Fast and reliable repair services for all types of computers.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service">
+          <img src="https://images.pexels.com/photos/5408005/pexels-photo-5408005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Network Setup">
+          <h3>Network Setup</h3>
+          <p>Efficient setup of wired and wireless networks for optimal performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-choose-us" class="section">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <div class="why-choose-us-list">
+        <div class="why-choose-us-item">
+          <i class="fas fa-check-circle"></i>
+          <h3>Expert Team</h3>
+          <p>Our team consists of certified professionals with years of experience.</p>
+        </div>
+        <div class="why-choose-us-item">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Quality Assurance</h3>
+          <p>We use only high-quality products and provide a warranty on all services.</p>
+        </div>
+        <div class="why-choose-us-item">
+          <i class="fas fa-headset"></i>
+          <h3>24/7 Support</h3>
+          <p>We offer round-the-clock customer support to assist you anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Our Portfolio</h2>
+      <div class="portfolio-grid">
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio-item">
+          <img src="https://images.pexels.com/photos/31076950/pexels-photo-31076950/free-photo-of-colorful-mechanical-keyboards-on-display-shelf.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="CCTV Installation">
+          <div class="portfolio-overlay">
+            <h3>CCTV Installation</h3>
+            <p>Professional setup for a residential property.</p>
+          </div>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="portfolio-item">
+          <img src="https://images.pexels.com/photos/1714341/pexels-photo-1714341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Computer Setup">
+          <div class="portfolio-overlay">
+            <h3>Computer Setup</h3>
+            <p>High-performance workstation for a small business.</p>
+          </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="portfolio-item">
+          <img src="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Network Setup">
+          <div class="portfolio-overlay">
+            <h3>Network Setup</h3>
+            <p>Efficient wired and wireless network for an office.</p>
+          </div>
+        </div>
+
+        <!-- Portfolio Item 4 -->
+        <div class="portfolio-item">
+          <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Security System">
+          <div class="portfolio-overlay">
+            <h3>Security System</h3>
+            <p>Advanced security system for a commercial building.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <h2>Customer Reviews</h2>
+      <div class="swiper review-swiper">
+        <div class="swiper-wrapper">
+          <!-- Review 1 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <p>"The CCTV cameras are amazing, and the installation was quick and professional. Highly recommend!"</p>
+              <h4>- Meenakshi Sharma</h4>
+              <p>⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <p>"Great service! The team provided excellent customer support, and my new computer is working perfectly."</p>
+              <h4>- Atul Maheshwari</h4>
+              <p>⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <p>"I’ve never felt more secure. The CCTV system they installed gives me peace of mind at home."</p>
+              <h4>- Sudhir Varshney</h4>
+              <p>⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact-us" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Chitra Gupt Colony Puliya No.3, Kasganj, 207123, Uttar Pradesh</p>
+          <p><i class="fas fa-phone"></i> +91 7078484828</p>
+          <p><i class="fas fa-envelope"></i> abhinavguptaksj@gmail.com</p>
+          <div class="stats">
+            <div class="stat-item">
+              <h3>10+</h3>
+              <p>Years of Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3>1000+</h3>
+              <p>Happy Customers</p>
+            </div>
+            <div class="stat-item">
+              <h3>24/7</h3>
+              <p>Support Available</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="Computer & CCTV Shop Logo" class="logo-img">
+        <p>&copy; 2025 A.G. Enterprises & I.T. Solutions. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Phone Icon -->
+  <a href="tel:+917078484828" class="floating-phone">
+    <i class="fas fa-phone"></i>
+  </a>
+
+  <!-- Preview Popup -->
+  <div id="preview-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2 id="popup-title"></h2>
+      <p id="popup-price"></p>
+      <p id="popup-description"></p>
+      <button class="order-btn">Place Order</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
